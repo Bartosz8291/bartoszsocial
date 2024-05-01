@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strona główna</title>
+<link rel="stylesheet" href="posts/style/posts.css">
+</head>
+<body>
+  <h1>Strona główna</h1>
+  
+  <div class="post" id="post1">
+    <h2>Tytuł posta 1</h2>
+    <p>To jest przykładowa treść posta.</p>
+    <p>Autor: @bartek3xdc (Bartosz Drusewicz)</p>
+  </div>
+  
+  <div class="post" id="post2">
+    <h2>Tytuł posta 2</h2>
+    <p>To jest kolejny przykładowy post.</p>
+    <p>Autor: Inny użytkownik</p>
+  </div>
+  
+  <!-- Dodaj więcej postów tutaj -->
+
+<script>
+  // Funkcja do ukrywania postów innych użytkowników niż @bartek3xdc
+  function hidePosts() {
+    var posts = document.querySelectorAll('.post'); // Znajdź wszystkie posty
+    posts.forEach(function(post) {
+      var author = post.querySelector('p:last-child').textContent; // Pobierz autora posta
+      if (!author.includes('@bartek3xdc')) { // Sprawdź, czy autor nie jest @bartek3xdc
+        post.style.display = 'none'; // Ukryj post
+      }
+    });
+  }
+
+  // Wywołaj funkcję po załadowaniu strony
+  window.onload = function() {
+    hidePosts();
+  };
+</script>
+
+</body>
+</html>
