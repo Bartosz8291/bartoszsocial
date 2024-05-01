@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #333; /* Kolor tła paska nawigacyjnego */
+  position: fixed; /* Styl nawigacji na stałym miejscu */
+  bottom: 0; /* Na dole strony */
+  width: 100%; /* Pełna szerokość */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white; /* Kolor tekstu linków */
+  text-decoration: none; /* Usunięcie podkreślenia */
+  padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+  background-color: #555; /* Kolor tła po najechaniu myszką */
+  border-radius: 5px;
+}
