@@ -4,24 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strona główna</title>
+<link rel="stylesheet" href="style/navbar.css">
 <link rel="stylesheet" href="posts/style/posts.css">
 </head>
 <body>
   <h1>Strona główna</h1>
   
   <div class="post" id="post1">
-    <h2>Tytuł posta 1</h2>
-    <p>To jest przykładowa treść posta.</p>
+    <h2>first version</h2>
+    <p>1.0.0</p>
     <p>Autor: @bartek3xdc (Bartosz Drusewicz)</p>
   </div>
   
   <div class="post" id="post2">
-    <h2>Tytuł posta 2</h2>
-    <p>To jest kolejny przykładowy post.</p>
-    <p>Autor: Inny użytkownik</p>
+    <h2>UPDATE 1.1.0</h2>
+    <p>UPDATE 1.1.0
+    TERAZ DODAMO NAVBAR
+    </p>
+    <p>Autor: @bartek3xdc (Bartosz Drusewicz)</p>
   </div>
   
   <!-- Dodaj więcej postów tutaj -->
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Dom</a></li>
+    <li><a href="/home">Strona główna</a></li>
+    <li><a href="#">Obserwowani</a></li>
+    <li><a href="#">Twoi obserwujący</a></li>
+    <li><a href="#">Biblioteka</a></li>
+  </ul>
+</nav>
 
 <script>
   // Funkcja do ukrywania postów innych użytkowników niż @bartek3xdc
